@@ -1,0 +1,31 @@
+import java.util.*;
+class Vechile{
+    void start(){
+        System.out.println("vechile is started");
+    }
+}
+class Bike extends Vechile{
+    void ride(){
+        System.out.println("bike is riding");
+    }
+}
+class car extends Vechile{
+    void end(){
+        System.out.println("car is ended");
+    }
+}
+public class HierarchicalInheritance {
+    public static void main(String[] args){
+        car c=new car();
+        c.start();
+        c.end();
+        Bike b=new Bike();
+        b.start();
+        b.ride();
+
+
+
+
+    }
+    
+}
