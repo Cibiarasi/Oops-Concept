@@ -1,0 +1,26 @@
+import java.util.*;
+class vechile{
+    void start(){
+        System.out.println("vechile starts");
+    }
+}
+class car extends vechile{
+    void start(){
+        System.out.println("car starts");
+    }
+    void display(){
+        start();
+        super.start();
+    }
+}
+    
+
+
+public class SuperKeywordMethode {
+    public static void main(String[] args){
+        car c=new car();
+        c.display();
+    }
+
+    
+}
