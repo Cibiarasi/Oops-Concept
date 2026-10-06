@@ -1,0 +1,28 @@
+import java.util.*;
+class COllegeStudent{
+    void study(){
+        System.out.println("i am a college student");
+    }
+}
+class Student extends COllegeStudent{
+    void learn(){
+        System.out.println("i am a student");
+    }
+}
+class Person extends Student{
+    void work(){
+        System.out.println("i am a person");
+    }
+}
+
+public class MultiinheritanceSample {
+    public static void main(String[] args){
+        Person p=new Person();
+        p.study();
+        p.learn();
+        p.work();
+        
+
+    }
+    
+}
