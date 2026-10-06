@@ -1,0 +1,21 @@
+import java.util.*;
+
+class vechile{
+    vechile(){
+        System.out.println("vechile constructor");
+    }
+}
+class car extends vechile{
+    car(){
+        super();
+        System.out.println("car cinstructie");
+    }
+   
+}
+public class SuperKeywordConstructor{
+    public static void main(String[] args){
+        car c=new car();
+        
+    }
+    
+}
