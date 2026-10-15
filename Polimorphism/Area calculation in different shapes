@@ -1,0 +1,26 @@
+import java.util.*;
+class Calculate{
+    int area(int length,int breadth){
+        System.out.println("Area if rectangle is: "+length*breadth);
+        return length*breadth;
+    }
+    int area(int side){
+        System.out.println("Area of square is: "+side*side);
+        return side*side;
+    }
+    int area(double radius){
+        System.out.println("Area of circle is: "+3.14*radius*radius);
+        return (int)(3.14*radius*radius);
+    }
+}
+public class Area{
+    public static void main(String[] args){
+        Calculate a=new Calculate();
+        a.area(4,5);
+        a.area(5);
+        a.area(5.0);
+      
+
+
+    }
+}
