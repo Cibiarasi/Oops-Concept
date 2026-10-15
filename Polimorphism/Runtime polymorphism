@@ -1,0 +1,36 @@
+import java.util.*;
+class Payment{
+    void pay(){
+          System.out.println("payment methode");
+
+    }
+  
+    
+}
+class gpay extends Payment{
+    @Override
+    void pay(){
+        System.out.println("payment completed through gpay");
+    }
+
+}
+class card extends Payment{
+    @Override
+    void pay(){
+        System.out.println("payment completed through card");
+    }
+    
+
+}
+public class RuntimePolymorphism {
+    public static void main(String[] args){
+        Payment a=new gpay();
+        a.pay();
+
+        a=new card();
+        a.pay();
+
+        a=new Payment();
+        a.pay();
+    }
+}
